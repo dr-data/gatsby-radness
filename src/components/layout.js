@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 import '../sass/styles.sass'
+import Navbar from '../components/navbar/navbar'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -16,8 +17,8 @@ const Layout = ({ children }) => (
     `}
     render={() => (
       <>
-
-          {children}
+        <Navbar/>
+        {children}
           <footer>
             © {new Date().getFullYear()}, Built with
             {` `}
