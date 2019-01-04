@@ -8,7 +8,6 @@ type Props = {
 }
 
 class NavItemComponent extends React.Component<Props, {}> {
-
   render() {
     const { navItem } = this.props
     return (
