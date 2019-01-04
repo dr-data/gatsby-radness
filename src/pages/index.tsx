@@ -5,7 +5,7 @@ import Canvas from '../components/canvas/canvas'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Portfolio" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Portfolio" keywords={[`gatsby`, `portfolio`, `react`, `web development`, `responsive`]} />
     <Canvas/>
   </Layout>
 )

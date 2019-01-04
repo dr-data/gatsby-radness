@@ -1,0 +1,56 @@
+@import "../../../sass/variables"
+
+.bullet-wrap
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin: 0 1rem
+  .hex-wrap
+    height: 100px
+    width: 100px
+    text-align: center
+    position: relative
+    display: inline-block
+    .hex
+      background-color: $primary
+      height: 100%
+      width: calc(100% * 0.57735)
+      display: inline-block
+      &:before
+        position: absolute
+        top: 0
+        right: calc((100% / 2) - ((100% * 0.57735) / 2))
+        background-color: inherit
+        height: inherit
+        width: inherit
+        content: ''
+        transform: rotateZ(60deg)
+      &:after
+        position: absolute
+        top: 0
+        right: calc((100% / 2) - ((100% * 0.57735) / 2))
+        background-color: inherit
+        height: inherit
+        width: inherit
+        content: ''
+        transform: rotateZ(-60deg)
+      .icon
+        position: absolute
+        top: 30px
+        font-size: 2.8em
+        color: #fff
+        left: 0
+        right: 0
+        z-index: 1
+  .blurb-wrap
+    text-align: center
+    width: 200px
+    .label
+      font-family: $font-semiBold
+      color: $charcoal
+      font-size: 1.5em
+      margin: 15px 0 5px
+      text-transform: uppercase
+    .blurb
+      font-size: 1em
+      font-family: $font-light

@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, StaticQuery } from 'gatsby'
+import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
 import '../sass/styles.sass'
 import Navbar from '../components/navbar/navbar'
 
@@ -19,11 +20,6 @@ const Layout = ({ children }) => (
       <>
         <Navbar/>
         {children}
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
       </>
     )}
   />
