@@ -4,9 +4,9 @@ import Header from '../header/header'
 
 const Canvas = () => (
   <>
-    <div className="canvas">
+    <section className="canvas">
       <Header/>
-    </div>
+    </section>
   </>
 )
 
