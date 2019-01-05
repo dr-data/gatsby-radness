@@ -1,4 +1,5 @@
 import * as React from 'react'
+import './project-template.sass'
 import Proptypes from 'prop-types'
 import Layout from '../../components/layout'
 
@@ -11,7 +12,7 @@ class ProjectTemplate extends React.Component {
       <Layout>
         <div style={{padding: '0 1rem'}}>
           <h1>{projectTitle}</h1>
-          <img src={url} alt='logo'/>
+          <img className="img-project-view" src={url} alt='logo'/>
           {<div dangerouslySetInnerHTML={{__html: html}}/>}
         </div>
       </Layout>
