@@ -3,8 +3,8 @@ import './blurb.sass'
 
 const Blurb = (props: any) => (
   <>
-    <div>{props.title}</div>
-      <div>{props.desc}</div>
+    <div className="blurb-title">{props.title}</div>
+      <div className="blurb-desc">{props.desc}</div>
   </>
 )
 
