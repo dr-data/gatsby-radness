@@ -5,16 +5,14 @@ import './project-card.sass'
 
 const ProjectItem = ({ node }) => {
   return (
-    <>
-      <div className="project-thumbnail">
-        <div className='project-caption'>
-          <Link className="link" to={node.slug}>
-            <img className="project-img" src={node.projectImage.file.url} alt='project image'/>
-            <div>{node.summary}</div>
-          </Link>
-        </div>
+    <div className="project-thumbnail">
+      <div className='project-caption'>
+        <Link className="link" to={node.slug}>
+          <img className="project-img" src={node.projectImage.file.url} alt='project image'/>
+          <div>{node.summary}</div>
+        </Link>
       </div>
-    </>
+    </div>
   )
 }
 
