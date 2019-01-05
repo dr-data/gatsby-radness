@@ -1,10 +1,10 @@
 import * as React from 'react'
-import Projects from './projects/project-card'
 import Layout from '../components/layout'
+import ProjectPage from './projects/projects-page'
 
 const ProjectsPage = () => (
   <Layout>
-    <Projects/>
+    <ProjectPage/>
   </Layout>
 )
 
