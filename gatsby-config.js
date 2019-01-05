@@ -1,3 +1,11 @@
+const dotenv = require("dotenv");
+
+if (process.env.ENVIRONMENT !== "production") {
+  dotenv.config();
+}
+
+const { spaceId, accessToken } = process.env;
+
 module.exports = {
   siteMetadata: {
     title: `Jason Brewer`,
@@ -8,6 +16,14 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-sass`,
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: spaceId,
+        accessToken: accessToken,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
