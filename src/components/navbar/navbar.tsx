@@ -14,8 +14,9 @@ class Navbar extends React.Component<any, any> {
   }
 
   navLinks = [
+    new NavItem('Home', '/'),
     new NavItem('Projects', '/'),
-    new NavItem('About', '/'),
+    new NavItem('About', 'about'),
     new NavItem('Contact', '/')
   ]
 
