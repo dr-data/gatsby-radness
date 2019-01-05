@@ -12,7 +12,6 @@ const ProfileContainer = () => (
       <div className='skills-cont'>
         <Skills/>
       </div>
-
     </div>
   </section>
 )

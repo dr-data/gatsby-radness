@@ -15,8 +15,8 @@ class Skills extends React.Component<any, any> {
     new ProgressBarItem('Node.js', '35%', '40'),
     new ProgressBarItem('UI Design', '60%', '70'),
     new ProgressBarItem('Sketch', '38%', '60')
-
   ]
+
   render() {
     return (
       <div>
