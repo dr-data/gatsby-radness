@@ -2,7 +2,7 @@ import * as React from 'react'
 import { StaticQuery, graphql } from "gatsby";
 import Link from 'gatsby-link'
 
-const ProjectThing = ({node}) => {
+const ProjectItem = ({node}) => {
   return (
       <Link to={node.slug}>
         <h3>{node.projectTitle}</h3>
@@ -10,7 +10,7 @@ const ProjectThing = ({node}) => {
   )
 }
 
-const Projects = () => (
+const ProjectCard = () => (
   <StaticQuery
     query={graphql`
       query Projects {
@@ -31,10 +31,10 @@ const Projects = () => (
     `}
     render={( data ) => (
       <>
-        {data.allContentfulMyProjects.edges.map((edge) => <ProjectThing node={edge.node} />)}
+        {data.allContentfulMyProjects.edges.map((edge) => <ProjectItem node={edge.node} />)}
       </>
     )}
   />
 );
 
-export default Projects
+export default ProjectCard

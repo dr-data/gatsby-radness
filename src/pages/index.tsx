@@ -3,9 +3,9 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Canvas from '../components/canvas/canvas'
 
-const IndexPage = ({data}) => (
+const IndexPage = () => (
   <Layout>
-    <SEO title="Portfolio" keywords={[`gatsby`, `portfolio`, `react`, `web development`, `responsive`]} />
+    <SEO title="Portfolio" keywords={[`gatsby`, `portfolio`, `react`, `web development`, `responsive`]}/>
     <Canvas/>
   </Layout>
 )
