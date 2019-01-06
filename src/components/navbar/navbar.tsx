@@ -17,7 +17,7 @@ class Navbar extends React.Component<any, any> {
     new NavItem('Home', '/'),
     new NavItem('Projects', 'projects'),
     new NavItem('About', 'about'),
-    new NavItem('Contact', '/')
+    new NavItem('Contact', '/contact'),
   ]
 
   render() {
@@ -29,8 +29,9 @@ class Navbar extends React.Component<any, any> {
                onClick={() => this.toggleSideNav(this.state.expanded)}>&#9776;</a>
             <div className='hideOnMobile navbar-main'>
               {this.navLinks.map(items => (
-                  <NavItemComponent key={items.routePath} navItem={items}/>
-                )
+                  <NavItemComponent key={items.text} navItem={items}/>
+
+                ),
               )}
             </div>
           </div>

@@ -37,7 +37,7 @@ const ProjectCard = () => (
     `}
     render={(data) => (
       <div className="project-grid">
-        {data.allContentfulMyProjects.edges.map((edge) => <ProjectItem node={edge.node}/>)}
+        {data.allContentfulMyProjects.edges.map((edge) => <ProjectItem key={edge.node.slug} node={edge.node}/>)}
       </div>
     )}
   />

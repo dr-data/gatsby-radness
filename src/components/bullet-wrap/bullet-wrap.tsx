@@ -14,14 +14,14 @@ class BulletWrap extends React.Component<any, any> {
     new BulletItem('fas fa-fighter-jet', 'Fast', this.blurbOne),
     new BulletItem('fas fa-mobile-alt', 'Responsive', this.blurbTwo),
     new BulletItem('far fa-lightbulb', 'Intuitive', this.blurbThree),
-    new BulletItem('fas fa-rocket', 'Dynamic', this.blurbFour)
+    new BulletItem('fas fa-rocket', 'Dynamic', this.blurbFour),
   ]
 
   render() {
     return (
       <div className="bullet-container">
         {this.bullets.map(items => (
-          <BulletItemComponent bulletItem={items}/>
+          <BulletItemComponent key={items.title} bulletItem={items}/>
         ))}
       </div>
     )
