@@ -7,7 +7,7 @@ exports.createPages = ({graphql, actions}) => {
     resolve(
       graphql(`
         {
-          allContentfulMyProjects (limit: 100) {
+          allContentfulDevProjects (limit: 100) {
             edges {
               node {
                 id
@@ -20,7 +20,7 @@ exports.createPages = ({graphql, actions}) => {
         if (result.errors) {
           reject(result.errors)
         }
-        result.data.allContentfulMyProjects.edges.forEach((edge) => {
+        result.data.allContentfulDevProjects.edges.forEach((edge) => {
           createPage ({
             path: edge.node.slug,
             component: projectTemplate,

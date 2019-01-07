@@ -1,15 +1,24 @@
 @import "../../../sass/variables"
 
-.project-thumbnail
+.project-thumbnail-container
   margin: 1rem
-  .project-caption
+  .thumbnail-wrapper
+    display: flex
+    flex-direction: column
     cursor: pointer
-    .link
-      text-decoration: none
-      .project-img
-        width: 360px
-        height: 250px
-        border-radius: 3px
-
-.project-grid
-  display: flex
+    text-decoration: none
+    .project-img
+      width: 360px
+      height: 250px
+      border-radius: 3px
+    .summary-wrapper
+      padding-top: .5rem
+      font-size: 1.3em
+      font-family: $font-semiBold
+      .thumbnail-title
+        color: $charcoal
+        display: flex
+        align-items: center
+        .fa-chevron-circle-right
+          color: $secondary
+          padding-left: 10px
