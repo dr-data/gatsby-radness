@@ -1,4 +1,79 @@
-.img-project-view
-  width: 360px
-  height: 250px
+@import "../../sass/variables"
+
+.template-content, .template-sidebar-box
+  background-color: $light-grey
+  padding: 20px
   border-radius: 3px
+
+.template-sidebar-box, .template-sidebar-box-tech
+  margin-bottom: 1rem
+  margin-left: 1rem
+  text-align: center
+
+.template-sidebar-box
+  margin-bottom: 1rem
+  margin-left: 1rem
+
+.skill-list-container
+  text-align: left
+  .skill-ul
+    list-style: none
+    padding-left: 0
+
+.template-title
+  color: $secondary
+  margin-bottom: 20px
+
+.template-text
+  color: $dark-grey
+
+hr
+  border: .5px solid $secondary
+
+.container
+  .template-container
+    display: flex
+    padding-bottom: 2rem
+    .template-content
+      flex: 2
+      .img-project-view
+        max-width: 300px
+        width: 100%
+        position: relative
+      .back-link
+        text-decoration: none
+        display: block
+        padding-bottom: 15px
+        font-family: $font-semiBold
+        color: $charcoal
+        .fa-chevron-circle-left
+          color: $secondary
+          padding-right: 10px
+      .fa-github
+        padding: .5rem 1rem
+        color: white
+        background-color: $secondary
+        font-weight: 500
+        -webkit-border-radius: 5px
+        -moz-border-radius: 5px
+        border-radius: 5px
+        margin-top: 1rem
+        &:hover
+          cursor: pointer
+        .source-code
+          font-family: $font-semiBold
+    .template-sidebar
+      flex: 1
+      .container
+        .template-sidebar-box
+          .btn-wrapper
+            padding: 50px 0
+            .template-web-link
+              text-decoration: none
+              background-color: $secondary
+              padding: .8rem .5rem
+              border-radius: 5px
+              color: white
+              font-family: $font-semiBold
+              .fa-arrow-circle-right
+                padding-left: 25px

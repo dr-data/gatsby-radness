@@ -21,7 +21,7 @@ class BulletWrap extends React.Component<any, any> {
     return (
       <div className="bullet-container">
         {this.bullets.map(items => (
-          <BulletItemComponent bulletItem={items}/>
+          <BulletItemComponent key={items.title} bulletItem={items}/>
         ))}
       </div>
     )
