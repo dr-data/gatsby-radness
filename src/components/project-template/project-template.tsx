@@ -7,14 +7,6 @@ import { Link } from 'gatsby'
 
 class ProjectTemplate extends React.Component<any, any> {
 
-  react: string
-  angular: string
-  html: string
-  css: string
-  sass: string
-  graphql: string
-
-
   render() {
     const {
       projectTitle, skills, sourceCode,

@@ -30,8 +30,7 @@ class Navbar extends React.Component<any, any> {
             <div className='hideOnMobile navbar-main'>
               {this.navLinks.map(items => (
                   <NavItemComponent key={items.text} navItem={items}/>
-
-                ),
+                )
               )}
             </div>
           </div>
@@ -42,7 +41,7 @@ class Navbar extends React.Component<any, any> {
           <div className='slide-nav-items'>
             {this.navLinks.map(items => (
                 <NavItemComponent key={items.routePath} navItem={items}/>
-              ),
+              )
             )}
           </div>
         </div>
