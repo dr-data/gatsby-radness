@@ -15,7 +15,8 @@ const ContactForm = () => (
     <input type="hidden" name="form-name" value="contact" />
   </form>
     <form name="contact-form" method="POST" data-netlify="true">
-      <input type="text" placeholder="name" name="name"/>
+      <label htmlFor='theName'>Boom</label>
+      <input id="theName" type="text" placeholder="name" name="name"/>
       <button type="submit">Send</button>
       <input type="hidden" name="form-thing" value="contact-form" />
     </form>
