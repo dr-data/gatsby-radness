@@ -16,7 +16,7 @@ const ContactForm = () => (
       <label>Boom</label>
       <input type="text" placeholder="name" name="name"/>
       <button type="submit">Send</button>
-      <input type="hidden" name="form-name" value="contact-form" />
+      <input type="hidden" name="form-name" value="germ" />
     </form>
   </>
 );
