@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 const ContactForm = () => (
+  <>
   <form key="contact-form" name="contact" method="POST" data-netlify="true">
     <div>
     </div>
@@ -13,6 +14,15 @@ const ContactForm = () => (
     </button>
     <input type="hidden" name="form-name" value="contact" />
   </form>
+    <form
+      name="contact-form"
+      method="post"
+      data-netlify="true"
+    >
+      <input type="text" placeholder="name" name="name"/>
+      <button>Send</button>
+    </form>
+  </>
 );
 
 export default ContactForm
