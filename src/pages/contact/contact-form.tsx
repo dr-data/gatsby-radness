@@ -21,6 +21,7 @@ const ContactForm = () => (
     >
       <input type="text" placeholder="name" name="name"/>
       <button>Send</button>
+      <input type="hidden" name="form-thing" value="contact-form" />
     </form>
   </>
 );
