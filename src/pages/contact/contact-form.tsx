@@ -18,7 +18,7 @@ const ContactForm = () => (
       <label htmlFor='theName'>Boom</label>
       <input id="theName" type="text" placeholder="name" name="name"/>
       <button type="submit">Send</button>
-      <input type="hidden" name="form-thing" value="contact-form" />
+      <input type="hidden" name="form-name" value="contact-form" />
     </form>
   </>
 );
