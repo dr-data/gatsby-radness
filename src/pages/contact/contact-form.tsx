@@ -1,12 +1,12 @@
 import * as React from 'react'
 import PropTypes from 'prop-types';
 
-const ContactForm = ({ action, name }) => (
+const ContactForm = () => (
   <form
     key="contact-form"
     name="contact"
     method="POST"
-    action={action}
+    // action={action}
     data-netlify-honeypot="full-name"
     data-netlify="true"
   >
@@ -27,8 +27,8 @@ const ContactForm = ({ action, name }) => (
   </form>
 );
 
-ContactForm.propTypes = {
-  action: PropTypes.string.isRequired,
-};
+// ContactForm.propTypes = {
+//   action: PropTypes.string.isRequired,
+// };
 
 export default ContactForm
