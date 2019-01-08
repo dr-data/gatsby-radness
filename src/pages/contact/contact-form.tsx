@@ -14,13 +14,9 @@ const ContactForm = () => (
     </button>
     <input type="hidden" name="form-name" value="contact" />
   </form>
-    <form
-      name="contact-form"
-      method="post"
-      data-netlify="true"
-    >
+    <form name="contact-form" method="POST" data-netlify="true">
       <input type="text" placeholder="name" name="name"/>
-      <button>Send</button>
+      <button type="submit">Send</button>
       <input type="hidden" name="form-thing" value="contact-form" />
     </form>
   </>
