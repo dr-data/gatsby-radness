@@ -11,6 +11,7 @@ const ContactForm = () => (
     <button type="submit">
       <span>Send Message</span>
     </button>
+    <input type="hidden" name="form-name" value="contact" />
   </form>
 );
 
