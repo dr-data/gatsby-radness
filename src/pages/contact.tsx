@@ -1,9 +1,10 @@
 import * as React from 'react'
 import Layout from '../components/layout'
+import ContactForm from './contact/contact-form'
 
 const Contact = () => (
   <Layout>
-    <div>Contact me</div>
+    <ContactForm/>
   </Layout>
 )
 
