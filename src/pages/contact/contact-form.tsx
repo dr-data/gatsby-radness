@@ -53,7 +53,7 @@ class ContactForm extends React.Component<any, any> {
           </div>
           <div className='terminal-body'>
             <span className="terminal-login-text">Last login: {this.lastLogin()}</span>
-            <form className="terminal-form" method="POST" data-netlify="true">
+            <form className="terminal-form" method="POST" data-netlify="true" name="contact">
               {Object.keys(SelectionOption).map(opt => {
                 return (
                   <SuperDynamicInput
