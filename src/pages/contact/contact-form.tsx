@@ -21,8 +21,8 @@ class ContactForm extends React.Component<any, any> {
   lastLogin = () => {
     let today = new Date()
     const dd = today.getDate()
-    const weekday = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat']
-    const months = ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
+    const weekday = ['Sun', 'Mon', 'Tues', 'Wed', 'Thu', 'Fri', 'Sat']
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
     const day = weekday[today.getDay()]
     const month = months[today.getMonth()]
     const hr = today.getHours()
@@ -65,7 +65,11 @@ class ContactForm extends React.Component<any, any> {
                 )
               })}
               <input type="hidden" name="form-name" value="term-contact"/>
-              <button type="submit">$ git push origin master (click to send)</button>
+              <div className='send-wrapper'>
+                <button className="git-push" type="submit">$ git push origin master
+                  <i className="fas fa-arrow-left"/> (click to send)
+                </button>
+              </div>
             </form>
           </div>
         </div>
