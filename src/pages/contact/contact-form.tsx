@@ -53,7 +53,7 @@ class ContactForm extends React.Component<any, any> {
           </div>
           <div className='terminal-body'>
             <span className="terminal-login-text">Last login: {this.lastLogin()}</span>
-            <form className="terminal-form" method="POST" data-netlify="true" name="contact">
+            <form className="terminal-form" method="POST" data-netlify="true" name="term-contact">
               {Object.keys(SelectionOption).map(opt => {
                 return (
                   <SuperDynamicInput
@@ -64,7 +64,7 @@ class ContactForm extends React.Component<any, any> {
                   />
                 )
               })}
-              <input type="hidden" name="form-name" value="contact"/>
+              <input type="hidden" name="form-name" value="term-contact"/>
               <button type="submit">$ git push origin master (click to send)</button>
             </form>
             <form name="contact" method="POST" data-netlify="true">
