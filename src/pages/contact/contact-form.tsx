@@ -38,13 +38,12 @@ class ContactForm extends React.Component<any, any> {
     return day + ' ' + month + ' ' + dd + ' ' + hr + ':' + min + ':' + sec + ' on ttys000'
   }
 
+
   render() {
-
-
     const { selection } = this.state
     return (
       <div className="container">
-        <div className='terminal-container'>
+        <div className="terminal-container">
           <div className='terminal-bar'>
             <i className="fas fa-times-circle"/>
             <i className="fas fa-minus-circle"/>
@@ -56,7 +55,7 @@ class ContactForm extends React.Component<any, any> {
             <form className="terminal-form" method="POST" data-netlify="true" name="term-contact">
               {Object.keys(SelectionOption).map(opt => {
                 return (
-                  <SuperDynamicInput
+                  <TerminalInput
                     key={opt}
                     selectionType={opt}
                     handleInputFocus={this.handleInputFocus}
@@ -65,11 +64,9 @@ class ContactForm extends React.Component<any, any> {
                 )
               })}
               <input type="hidden" name="form-name" value="term-contact"/>
-              <div className='send-wrapper'>
-                <button className="git-push" type="submit">$ git push origin master
-                  <i className="fas fa-arrow-left"/> (click to send)
-                </button>
-              </div>
+              <button type="submit" className="git-push">$ git push origin master
+                <i className="fas fa-arrow-left"/> (click to send)
+              </button>
             </form>
           </div>
         </div>
@@ -78,7 +75,7 @@ class ContactForm extends React.Component<any, any> {
   }
 }
 
-const SuperDynamicInput = props => {
+const TerminalInput = props => {
   return (
     <div className="input-container">
       <div className='terminal-label-wrapper'>
