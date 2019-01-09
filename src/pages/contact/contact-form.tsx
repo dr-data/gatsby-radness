@@ -67,16 +67,6 @@ class ContactForm extends React.Component<any, any> {
               <input type="hidden" name="form-name" value="term-contact"/>
               <button type="submit">$ git push origin master (click to send)</button>
             </form>
-            <form name="contact" method="POST" data-netlify="true">
-              <label htmlFor="fname">Name</label>
-              <input type="text" id="fname" name="name" required/>
-              <label htmlFor="email">Email</label>
-              <input type="email" id="email" name="email" required/>
-              <button type="submit">
-                <span>Send Message</span>
-              </button>
-              <input type="hidden" name="form-name" value="contact"/>
-            </form>
           </div>
         </div>
       </div>
@@ -88,17 +78,15 @@ const SuperDynamicInput = props => {
   return (
     <div className="input-container">
       <div className='terminal-label-wrapper'>
-        <label className='terminal-label' htmlFor='field'>{props.selectionType}</label>
+        <label className='terminal-label'>{props.selectionType}</label>
       </div>
       <div className='field-wrapper'>
         {props.selected && (<div className="blink-wrapper">$
           <div className="blinking"/>
         </div>)}
         <input
-          form='field'
           name={props.selectionType}
           onFocus={() => props.handleInputFocus(props.selectionType)}
-          role="grid"
           className="terminal-field"
         />
       </div>
