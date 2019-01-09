@@ -1,0 +1,75 @@
+@import "../../sass/variables"
+
+.terminal-container
+  padding: 5rem 0
+  .terminal-bar
+    background-color: grey
+    display: flex
+    padding: .4rem .2rem
+    border-radius: 5px 5px 0 0
+    .close-btn, .min-btn, .ex-btn
+      display: flex
+      justify-content: center
+      color: $charcoal
+      width: 20px
+      height: 20px
+      border-radius: 50%
+      margin: 0 .3rem
+    .close-btn
+      background-color: #FF605C
+    .min-btn
+      background-color: #00CA4E
+    .ex-btn
+      background-color: #FFBD44
+  .terminal-body
+    background-color: rgba(0,0,0,.8)
+    color: white
+    padding: 2rem .5rem 8rem
+    border-radius: 0 0 5px 5px
+
+.blinking
+  animation: blinkingBox 1s infinite
+  transition: .3s ease-in-out
+  width: 8px
+  color: black
+  background-color: black
+  height: 30px
+  margin: 0 5px
+.blink-wrapper
+  display: flex
+  align-items: center
+.input-container
+  display: flex
+  align-items: center
+  margin: .5rem 0
+  .terminal-label-wrapper
+    display: flex
+    flex-direction: column
+    .terminal-label
+      width: 80px
+
+.field-wrapper
+  display: flex
+input, textarea
+  background: transparent
+  border: .5px solid rgba(0,0,0,.1)
+  color: transparent
+  text-shadow: 0 0 0 #FFFFFF
+  border-radius: 3px
+  padding: .2rem .5rem
+  line-height: 1.5
+  font-size: 1.1rem
+  &:focus
+    outline: none
+
+@keyframes blinkingBox
+  0%
+    background-color: $dark-grey
+  49%
+    background-color: transparent
+  50%
+    background-color: transparent
+  99%
+    background-color: transparent
+  100%
+    background-color: $dark-grey
