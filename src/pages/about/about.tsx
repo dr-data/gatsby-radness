@@ -5,11 +5,13 @@ import BulletWrap from '../../components/bullet-wrap/bullet-wrap'
 import ProfileContainer from './profile-container/profile-container'
 
 const About = () => (
-  <section id="about" className="container">
+  <>
     <PageHeader title="About"/>
-    <BulletWrap/>
-    <ProfileContainer/>
-  </section>
+    <section id="about" className="container">
+      <BulletWrap/>
+      <ProfileContainer/>
+    </section>
+  </>
 )
 
 export default About

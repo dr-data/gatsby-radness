@@ -1,0 +1,108 @@
+@import "../../sass/variables"
+
+.terminal-container
+  max-width: 900px
+  width: 100%
+  margin: auto
+  .terminal-bar
+    background-color: grey
+    display: flex
+    align-items: center
+    padding: .6rem .2rem
+    border-radius: 5px 5px 0 0
+    .fa-times-circle, .fa-minus-circle, .fa-plus-circle
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 1.2rem
+      height: 10px
+      width: 10px
+      margin: 0 .5rem
+      background-color: black
+    .fa-times-circle
+      color: #FF605C
+    .fa-minus-circle
+      color: #00CA4E
+    .fa-plus-circle
+      color: #FFBD44
+    .bash
+      margin: 0 auto
+      .line
+        border: .5px solid $charcoal
+        width: 10px
+        display: inline-block
+        position: relative
+        bottom: 4px
+  .terminal-body
+    background-color: rgba(0,0,0,.8)
+    color: white
+    padding: 2rem .5rem
+    border-radius: 0 0 5px 5px
+    .terminal-login-text
+      letter-spacing: 1px
+      font-family: monospace
+      font-size: 1.2rem
+    .terminal-form
+      padding-top: 2rem
+      .git-push
+        background: transparent
+        border: none
+        color: white
+        font-family: monospace
+        font-size: 1.3rem
+        margin-top: 4rem
+        &:hover
+          cursor: pointer
+          color: #33CC00
+        .fa-arrow-left
+          position: relative
+          top: 2px
+          padding-left: .6rem
+          padding-right: .2rem
+
+.blinking
+  animation: blinkingBox 1s infinite
+  transition: .3s ease-in-out
+  width: 8px
+  color: black
+  background-color: black
+  height: 22px
+  margin: 0 5px
+.blink-wrapper
+  display: flex
+  align-items: center
+.input-container
+  display: flex
+  align-items: center
+  margin: .5rem 0
+  .terminal-label-wrapper
+    display: flex
+    flex-direction: column
+    .terminal-label
+      width: 80px
+
+.field-wrapper
+  display: flex
+input, textarea
+  background: transparent
+  border: .5px solid rgba(0,0,0,0   )
+  color: transparent
+  text-shadow: 0 0 0 #FFFFFF
+  border-radius: 3px
+  padding: .2rem .5rem
+  line-height: 1.5
+  font-size: 1.1rem
+  &:focus
+    outline: none
+
+@keyframes blinkingBox
+  0%
+    background-color: #eee
+  49%
+    background-color: transparent
+  50%
+    background-color: transparent
+  99%
+    background-color: transparent
+  100%
+    background-color: #eee
