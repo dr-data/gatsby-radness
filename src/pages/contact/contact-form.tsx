@@ -1,5 +1,6 @@
 import * as React from 'react'
 import './contact-form.sass'
+import PageHeader from '../../components/page-header/page-header'
 
 const SelectionOption = {
   Name: 'Name',
@@ -42,35 +43,38 @@ class ContactForm extends React.Component<any, any> {
   render() {
     const { selection } = this.state
     return (
-      <div className="container">
-        <div className="terminal-container">
-          <div className='terminal-bar'>
-            <i className="fas fa-times-circle"/>
-            <i className="fas fa-minus-circle"/>
-            <i className="fas fa-plus-circle"/>
-            <div className="bash">radness <div className="line"/> -bash <div className="line"/> 99x20</div>
-          </div>
-          <div className='terminal-body'>
-            <span className="terminal-login-text">Last login: {this.lastLogin()}</span>
-            <form className="terminal-form" method="POST" data-netlify="true" name="term-contact">
-              {Object.keys(SelectionOption).map(opt => {
-                return (
-                  <TerminalInput
-                    key={opt}
-                    selectionType={opt}
-                    handleInputFocus={this.handleInputFocus}
-                    selected={selection === opt}
-                  />
-                )
-              })}
-              <input type="hidden" name="form-name" value="term-contact"/>
-              <button type="submit" className="git-push">$ git push origin master
-                <i className="fas fa-arrow-left"/> (click to send)
-              </button>
-            </form>
+      <>
+        <PageHeader title="Use the terminal to contact me"/>
+        <div className="container">
+          <div className="terminal-container">
+            <div className='terminal-bar'>
+              <i className="fas fa-times-circle"/>
+              <i className="fas fa-minus-circle"/>
+              <i className="fas fa-plus-circle"/>
+              <div className="bash">radness <div className="line"/> -bash <div className="line"/> 99x20</div>
+            </div>
+            <div className='terminal-body'>
+              <span className="terminal-login-text">Last login: {this.lastLogin()}</span>
+              <form className="terminal-form" method="POST" data-netlify="true" name="term-contact">
+                {Object.keys(SelectionOption).map(opt => {
+                  return (
+                    <TerminalInput
+                      key={opt}
+                      selectionType={opt}
+                      handleInputFocus={this.handleInputFocus}
+                      selected={selection === opt}
+                    />
+                  )
+                })}
+                <input type="hidden" name="form-name" value="term-contact"/>
+                <button type="submit" className="git-push">$ git push origin master
+                  <i className="fas fa-arrow-left"/> (click to send)
+                </button>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
+      </>
     )
   }
 }

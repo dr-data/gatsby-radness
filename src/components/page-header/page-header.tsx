@@ -3,7 +3,9 @@ import './page-header.sass'
 
 const PageHeader = (props: any) => (
   <>
-    <header className="header-title">{props.title}</header>
+    <header className="header-title">
+      <h3>{props.title}</h3>
+      </header>
     <div className='header-bar'/>
   </>
 
