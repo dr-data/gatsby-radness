@@ -65,7 +65,7 @@ class ContactForm extends React.Component<any, any> {
                 )
               })}
               <input type="hidden" name="form-name" value="contact"/>
-              <button>$ git push origin master (click to send 🤓)</button>
+              <button>$ git push origin master (click to send)</button>
             </form>
           </div>
         </div>
