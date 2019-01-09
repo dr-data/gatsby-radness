@@ -2,30 +2,48 @@
 
 .terminal-container
   padding: 5rem 0
+  max-width: 900px
+  width: 100%
+  margin: auto
   .terminal-bar
     background-color: grey
     display: flex
-    padding: .4rem .2rem
+    padding: .6rem .2rem
     border-radius: 5px 5px 0 0
-    .close-btn, .min-btn, .ex-btn
+    .fa-times-circle, .fa-minus-circle, .fa-plus-circle
       display: flex
       justify-content: center
-      color: $charcoal
-      width: 20px
-      height: 20px
-      border-radius: 50%
-      margin: 0 .3rem
-    .close-btn
-      background-color: #FF605C
-    .min-btn
-      background-color: #00CA4E
-    .ex-btn
-      background-color: #FFBD44
+      align-items: center
+      font-size: 1.2rem
+      height: 10px
+      width: 10px
+      margin: 0 .5rem
+      background-color: black
+    .fa-times-circle
+      color: #FF605C
+    .fa-minus-circle
+      color: #00CA4E
+    .fa-plus-circle
+      color: #FFBD44
+    .bash
+      margin: 0 auto
+      .line
+        border: .5px solid $charcoal
+        width: 10px
+        display: inline-block
+        position: relative
+        bottom: 4px
   .terminal-body
     background-color: rgba(0,0,0,.8)
     color: white
     padding: 2rem .5rem 8rem
     border-radius: 0 0 5px 5px
+    .terminal-login-text
+      letter-spacing: 1px
+      font-family: monospace
+      font-size: 1.2rem
+    .terminal-form
+      padding-top: 2rem
 
 .blinking
   animation: blinkingBox 1s infinite
