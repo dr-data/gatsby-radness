@@ -1,7 +1,7 @@
 @import "../../../sass/variables"
 
 .project-thumbnail-container
-  margin: 1rem
+  padding-bottom: 2rem
   .thumbnail-wrapper
     display: flex
     flex-direction: column
@@ -11,6 +11,8 @@
       width: 360px
       height: 250px
       border-radius: 3px
+      border: .5px solid $dark-grey
+      padding: .2rem
     .summary-wrapper
       padding-top: .5rem
       font-size: 1.3em
@@ -25,4 +27,6 @@
 
 .project-grid
   display: flex
+  justify-content: space-evenly
   flex-wrap: wrap
+  padding-bottom: 4rem
