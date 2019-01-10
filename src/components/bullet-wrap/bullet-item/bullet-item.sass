@@ -5,12 +5,20 @@
   flex-direction: column
   align-items: center
   margin: 0 1rem
+  @media (max-width: 768px)
+    flex-direction: row
+    margin: 1rem
+  @media (max-width: 599px)
+    margin: 0
   .hex-wrap
     height: 100px
     width: 100px
     text-align: center
     position: relative
     display: inline-block
+    @media (max-width: 599px)
+      width: 50px
+      height: 50px
     .hex
       background-color: $primary
       height: 100%
@@ -42,15 +50,22 @@
         left: 0
         right: 0
         z-index: 1
+        @media (max-width: 599px)
+          font-size: 2rem
+          top: 10px
   .blurb-wrap
     text-align: center
     width: 200px
+    @media (max-width: 900px)
+      margin-left: 1rem
     .label
       font-family: $font-semiBold
       color: $charcoal
       font-size: 1.5em
       margin: 15px 0 5px
       text-transform: uppercase
+      @media (max-width: 599px)
+        font-size: 1.3rem
     .blurb
       font-size: 1em
       font-family: $font-light

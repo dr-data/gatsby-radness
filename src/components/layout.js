@@ -18,8 +18,10 @@ const Layout = ({ children }) => (
     `}
     render={() => (
       <>
-        <Navbar/>
-        {children}
+         <Navbar/>
+         <div className='container'>
+           {children}
+         </div>
       </>
     )}
   />

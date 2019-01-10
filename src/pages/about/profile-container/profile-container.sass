@@ -1,8 +1,17 @@
 .profile-container
   padding: 4rem
-  .container
-    display: flex
-    .profile-cont
-      flex: 1
-    .skills-cont
-      flex: 1
+  display: flex
+  @media (max-width: 768px)
+    flex-direction: column
+  @media (max-width: 599px)
+    padding: 1rem 1rem 4rem
+  .profile-cont
+    flex: 1
+  .skills-cont
+    flex: 1
+
+@media (max-width: 768px)
+  .profile-cont
+    order: 1
+  .skills-cont
+    order: 1

@@ -11,10 +11,10 @@ class BulletWrap extends React.Component<any, any> {
   blurbFour = 'Websites don\'t have to be static, I love making pages come to life'
 
   bullets = [
-    new BulletItem('fas fa-fighter-jet', 'Fast', this.blurbOne),
+    new BulletItem('fas fa-bolt', 'Fast', this.blurbOne),
     new BulletItem('fas fa-mobile-alt', 'Responsive', this.blurbTwo),
     new BulletItem('far fa-lightbulb', 'Intuitive', this.blurbThree),
-    new BulletItem('fas fa-rocket', 'Dynamic', this.blurbFour)
+    new BulletItem('fas fa-laptop-code', 'Dynamic', this.blurbFour)
   ]
 
   render() {
