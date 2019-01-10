@@ -35,59 +35,58 @@
 hr
   border: .5px solid $secondary
 
-.container
-  .template-container
-    display: flex
-    flex-direction: row
-    padding: 0 1rem 2rem
-    @media (max-width: 1000px)
-      flex-direction: column
-    @media (max-width: 768px)
-      padding-top: 1rem
-    .template-content
-      flex: 2
-      .img-project-view
-        max-width: 300px
-        width: 100%
-        position: relative
-        @media (max-width: 599px)
-          max-width: initial
-      .back-link
-        text-decoration: none
-        display: block
-        padding-bottom: 15px
+.template-container
+  display: flex
+  flex-direction: row
+  padding: 0 1rem 2rem
+  @media (max-width: 1000px)
+    flex-direction: column
+  @media (max-width: 768px)
+    padding-top: 1rem
+  .template-content
+    flex: 2
+    .img-project-view
+      max-width: 300px
+      width: 100%
+      position: relative
+      @media (max-width: 599px)
+        max-width: initial
+    .back-link
+      text-decoration: none
+      display: block
+      padding-bottom: 15px
+      font-family: $font-semiBold
+      color: $charcoal
+      .fa-chevron-circle-left
+        color: $secondary
+        padding-right: 10px
+    .fa-github
+      padding: .5rem 1rem
+      color: white
+      background-color: $secondary
+      font-weight: 500
+      -webkit-border-radius: 5px
+      -moz-border-radius: 5px
+      border-radius: 5px
+      margin-top: 1rem
+      &:hover
+        cursor: pointer
+      .source-code
         font-family: $font-semiBold
-        color: $charcoal
-        .fa-chevron-circle-left
-          color: $secondary
-          padding-right: 10px
-      .fa-github
-        padding: .5rem 1rem
-        color: white
-        background-color: $secondary
-        font-weight: 500
-        -webkit-border-radius: 5px
-        -moz-border-radius: 5px
-        border-radius: 5px
-        margin-top: 1rem
-        &:hover
-          cursor: pointer
-        .source-code
+  .template-sidebar
+    flex: 1
+    .template-sidebar-box
+      .btn-wrapper
+        padding: 50px 0
+        .template-web-link
+          text-decoration: none
+          background-color: $secondary
+          padding: .8rem .5rem
+          border-radius: 5px
+          color: white
           font-family: $font-semiBold
-    .template-sidebar
-      flex: 1
-      .template-sidebar-box
-        .btn-wrapper
-          padding: 50px 0
-          .template-web-link
-            text-decoration: none
-            background-color: $secondary
-            padding: .8rem .5rem
-            border-radius: 5px
-            color: white
-            font-family: $font-semiBold
-            .fa-arrow-circle-right
-              padding-left: 25px
+          .fa-arrow-circle-right
+            padding-left: 25px
 
 @media (max-width: 599px)
   .source-code, .template-title
