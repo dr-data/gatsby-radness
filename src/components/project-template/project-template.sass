@@ -9,16 +9,21 @@
   margin-bottom: 1rem
   margin-left: 1rem
   text-align: center
-
-.template-sidebar-box
-  margin-bottom: 1rem
-  margin-left: 1rem
+  @media (max-width: 900px)
+    margin-left: 0
+    margin-top: 1rem
 
 .skill-list-container
   text-align: left
+  @media (max-width: 768px)
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-evenly
   .skill-ul
     list-style: none
     padding-left: 0
+    @media (max-width: 768px)
+      padding: 0 .4rem
 
 .template-title
   color: $secondary
@@ -33,13 +38,20 @@ hr
 .container
   .template-container
     display: flex
-    padding-bottom: 2rem
+    flex-direction: row
+    padding: 0 1rem 2rem
+    @media (max-width: 1000px)
+      flex-direction: column
+    @media (max-width: 768px)
+      padding-top: 1rem
     .template-content
       flex: 2
       .img-project-view
         max-width: 300px
         width: 100%
         position: relative
+        @media (max-width: 599px)
+          max-width: initial
       .back-link
         text-decoration: none
         display: block
@@ -64,16 +76,19 @@ hr
           font-family: $font-semiBold
     .template-sidebar
       flex: 1
-      .container
-        .template-sidebar-box
-          .btn-wrapper
-            padding: 50px 0
-            .template-web-link
-              text-decoration: none
-              background-color: $secondary
-              padding: .8rem .5rem
-              border-radius: 5px
-              color: white
-              font-family: $font-semiBold
-              .fa-arrow-circle-right
-                padding-left: 25px
+      .template-sidebar-box
+        .btn-wrapper
+          padding: 50px 0
+          .template-web-link
+            text-decoration: none
+            background-color: $secondary
+            padding: .8rem .5rem
+            border-radius: 5px
+            color: white
+            font-family: $font-semiBold
+            .fa-arrow-circle-right
+              padding-left: 25px
+
+@media (max-width: 599px)
+  .source-code, .template-title
+    text-align: center
