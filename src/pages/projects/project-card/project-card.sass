@@ -7,12 +7,15 @@
     flex-direction: column
     cursor: pointer
     text-decoration: none
+    &:hover .summary-wrapper > .thumbnail-title > .fa-chevron-circle-right
+      transform: translateX(10px)
     .project-img
       width: 360px
       height: 250px
       border-radius: 3px
       border: .5px solid $dark-grey
       padding: .2rem
+      transition: .2s ease-in-out
       @media (max-width: 599px)
         width: 100%
         height: 100%
@@ -29,6 +32,20 @@
         .fa-chevron-circle-right
           color: $secondary
           padding-left: 10px
+          transition: transform 0.2s ease
+
+.overlay
+  position: absolute
+  height: 257px
+  width: 367px
+  opacity: 0
+  transition: .5s ease
+  background-color: rgba(0, 0, 0, .1)
+  @media (max-width: 599px)
+    width: auto
+    height: auto
+  &:hover
+    opacity: 1
 
 .project-grid
   display: flex

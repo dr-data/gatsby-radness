@@ -4,6 +4,7 @@ import { graphql, StaticQuery } from 'gatsby'
 import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
 import '../sass/styles.sass'
 import Navbar from '../components/navbar/navbar'
+import Footer from '../components/footer/footer'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -18,10 +19,9 @@ const Layout = ({ children }) => (
     `}
     render={() => (
       <>
-         <Navbar/>
-         <div className='container'>
-           {children}
-         </div>
+        <Navbar/>
+        {children}
+        <Footer/>
       </>
     )}
   />
