@@ -25,13 +25,14 @@ class ProjectTemplate extends React.Component<any, any> {
         </div>
         <div className='template-container'>
           <div className="template-content">
-            <Link className="back-link" to="projects"><i className="fas fa-chevron-circle-left"/>Back to
-              projects</Link>
+            <Link className="back-link" to="projects"><i className="fas fa-chevron-circle-left"/>
+              Back to projects
+            </Link>
             <img className="img-project-view" src={url} alt=''/>
             <div className="source-code">
               {sourceCode !== null &&
-              <a href={sourceCode} target="_blank">
-                <i className="fab fa-github"> <span className="source-code"> Source Code</span></i>
+              <a className="git-btn" href={sourceCode} target="_blank">
+                <i className="fab fa-github"/>Source Code
               </a>}
             </div>
             <h2 className="template-title">Project Brief</h2>

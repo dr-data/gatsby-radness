@@ -8,6 +8,7 @@ const ProjectItem = ({ node }) => {
     <div className="project-thumbnail-container">
       <Link className="thumbnail-wrapper" to={node.slug}>
         <img className="project-img" src={node.projectThumbnail.file.url} alt='project image'/>
+        <div className='overlay'/>
         <div className='summary-wrapper'>
           <div className="thumbnail-title">{node.projectTitle}
             <i className="fas fa-chevron-circle-right"/>

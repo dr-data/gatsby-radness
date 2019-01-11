@@ -1,4 +1,5 @@
 @import "../../sass/variables"
+@import "../../sass/buttons"
 
 .template-content, .template-sidebar-box
   background-color: $light-grey
@@ -57,36 +58,41 @@ hr
       padding-bottom: 15px
       font-family: $font-semiBold
       color: $charcoal
+      transition: transform 0.2s ease
+      position: relative
+      &:hover .fa-chevron-circle-left
+        transform: translateX(-10px)
       .fa-chevron-circle-left
         color: $secondary
         padding-right: 10px
-    .fa-github
-      padding: .5rem 1rem
-      color: white
-      background-color: $secondary
-      font-weight: 500
-      -webkit-border-radius: 5px
-      -moz-border-radius: 5px
-      border-radius: 5px
+        transition: transform 0.2s ease
+    .source-code
       margin-top: 1rem
-      &:hover
-        cursor: pointer
-      .source-code
-        font-family: $font-semiBold
+      .git-btn
+        @extend %btn-secondary
+        &:hover .fa-github
+          -webkit-transform: rotate(360deg)
+          transform: rotate(360deg)
+        .fa-github
+          margin-right: 5px
+          transform: rotate(0)
+          transition: 0.4s ease-in-out
+          -webkit-transition: 0.4s ease-in-out
+          -moz-transition: 0.4s ease-in-out
+
+
   .template-sidebar
     flex: 1
     .template-sidebar-box
       .btn-wrapper
         padding: 50px 0
         .template-web-link
-          text-decoration: none
-          background-color: $secondary
-          padding: .8rem .5rem
-          border-radius: 5px
-          color: white
-          font-family: $font-semiBold
+          @extend %btn-secondary
+          &:hover .fa-arrow-circle-right
+            transform: translateX(10px)
           .fa-arrow-circle-right
             padding-left: 25px
+            transition: transform 0.2s ease
 
 @media (max-width: 599px)
   .source-code, .template-title
