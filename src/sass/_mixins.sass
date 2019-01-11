@@ -7,3 +7,19 @@
   font-family: $ff
   &:hover
     background-color: darken($bg, 5%)
+
+=animation($animation, $fill, $duration)
+  -webkit-animation: $animation
+  -moz-animation: $animation
+  animation: $animation
+  -webkit-animation-fill-mode: $fill
+  -moz-animation-fill-mode: $fill
+  animation-fill-mode: $fill
+  -webkit-animation-duration: $duration
+  -moz-animation-duration: $duration
+  animation-duration: $duration
+
+=delay($dur)
+  -webkit-animation-delay: $dur
+  -moz-animation-delay: $dur
+  animation-delay: $dur
