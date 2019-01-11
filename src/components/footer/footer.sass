@@ -1,0 +1,28 @@
+@import "../../sass/variables"
+
+.footer-container
+  background-color: $darker-grey
+  border-top: 1px solid $primary
+  padding: 2rem 0
+  color: white
+  .social-comp-wrapper
+    display: flex
+    justify-content: center
+  .made-with
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: .75rem
+    padding-top: 1rem
+    cursor: pointer
+    &:hover .fa-heart
+      -webkit-transform: rotate(360deg)
+      transform: rotate(360deg)
+    .fa-heart
+      color: #ff3333
+      font-size: 1rem
+      padding: 0 5px
+      transform: rotate(0)
+      -webkit-transition: 0.4s ease-in-out
+      -moz-transition: 0.4s ease-in-out
+      transition: 0.4s ease-in-out
