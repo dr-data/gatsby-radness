@@ -11,12 +11,12 @@ class BulletItemComponent extends React.Component<Props, {}> {
     const { bulletItem } = this.props
     return (
       <div className="bullet-wrap">
-        <div className='hex-wrap'>
+        <div className={`hex-wrap ${bulletItem.rotateClass}`}>
           <div className='hex'>
             <i className={`icon ${bulletItem.icon}`}/>
           </div>
         </div>
-        <div className='blurb-wrap'>
+        <div className={`blurb-wrap ${bulletItem.blurClass}`}>
           <div className='label'>{bulletItem.title}</div>
           <div className='blurb'>{bulletItem.blurb}</div>
         </div>
