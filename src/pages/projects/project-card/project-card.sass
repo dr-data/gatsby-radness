@@ -8,7 +8,8 @@
     cursor: pointer
     text-decoration: none
     &:hover .summary-wrapper > .thumbnail-title > .fa-chevron-circle-right
-      transform: translateX(10px)
+      -webkit-transform: rotate(180deg)
+      transform: rotate(180deg)
     .project-img
       width: 360px
       height: 250px
@@ -28,11 +29,15 @@
       .thumbnail-title
         color: $charcoal
         display: flex
-        align-items: center
+        align-items: baseline
         .fa-chevron-circle-right
+          position: relative
+          left: 10px
           color: $secondary
-          padding-left: 10px
-          transition: transform 0.2s ease
+          transform: rotate(0)
+          -webkit-transition: 0.2s ease-in-out
+          -moz-transition: 0.2s ease-in-out
+          transition: .2s ease-in-out
 
 .overlay
   position: absolute
