@@ -9,6 +9,7 @@ class SocialLinks extends React.Component<> {
     new SocialLinkItem('fab fa-github', 'https://github.com/jradness'),
     new SocialLinkItem('fab fa-linkedin', 'https://www.linkedin.com/in/jbrewer3/')
   ]
+  
   render() {
     return (
       <div className="social-link-wrapper">
