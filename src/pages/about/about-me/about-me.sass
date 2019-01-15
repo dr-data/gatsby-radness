@@ -3,16 +3,25 @@
 .b-about
   display: flex
   align-items: center
+  flex-wrap: wrap
   padding: 0 4rem
+  @media (max-width: 768px)
+    justify-content: center
   .about-headshot-wrapper
+    order: 1
+    @media (max-width: 768px)
+      margin-bottom: 2rem
     .about-headshot
       border-radius: 50%
       width: 220px
   .about-message-wrapper
     margin-left: 2rem
+    order: 2
+    @media (max-width: 768px)
+      margin: 0
+      text-align: center
     .about-message
       letter-spacing: 1.1px
       line-height: 1.1
       color: $charcoal
       margin-top: 0
-
