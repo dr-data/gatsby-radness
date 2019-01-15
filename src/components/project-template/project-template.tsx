@@ -21,7 +21,7 @@ class ProjectTemplate extends React.Component<any, any> {
 
     return (
       <Layout>
-        <div className='container'>
+        <div className='container section-container'>
           <div className='hideOnMobile'>
             <ProjectHeader title={headerTitle}/>
           </div>
