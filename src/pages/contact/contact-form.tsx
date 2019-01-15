@@ -92,7 +92,7 @@ const TerminalInput = props => {
         <input
           name={props.selectionType}
           onFocus={() => props.handleInputFocus(props.selectionType)}
-          className="terminal-field"
+          className="terminal-field" required={true}
         />
       </div>
     </div>

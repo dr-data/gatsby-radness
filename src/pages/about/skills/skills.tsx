@@ -16,6 +16,7 @@ class Skills extends React.Component<any, any> {
     new TechSkillItem('Sketch', this.filledStar, this.filledStar, this.filledStar, this.emptyStar, this.emptyStar),
     new TechSkillItem('Photoshop', this.filledStar, this.filledStar, this.filledStar, this.emptyStar, this.emptyStar),
     new TechSkillItem('Illustrator', this.filledStar, this.filledStar, this.filledStar, this.emptyStar, this.emptyStar),
+    new TechSkillItem('Git', this.filledStar, this.filledStar, this.filledStar, this.filledStar, this.filledStar)
   ]
 
   techItemColTwo = [
@@ -24,7 +25,7 @@ class Skills extends React.Component<any, any> {
     new TechSkillItem('Typescript', this.filledStar, this.filledStar, this.filledStar, this.halfStar, this.emptyStar),
     new TechSkillItem('Wordpress', this.filledStar, this.filledStar, this.filledStar, this.emptyStar, this.emptyStar),
     new TechSkillItem('UI / UX', this.filledStar, this.filledStar, this.filledStar, this.halfStar, this.emptyStar),
-    new TechSkillItem('Responsive Design', this.filledStar, this.filledStar, this.filledStar, this.filledStar, this.filledStar),
+    new TechSkillItem('Responsive Design', this.filledStar, this.filledStar, this.filledStar, this.filledStar, this.filledStar)
   ]
 
   render() {

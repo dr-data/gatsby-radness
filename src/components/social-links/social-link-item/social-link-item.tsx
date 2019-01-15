@@ -12,7 +12,7 @@ class SocialLinkComponent extends React.Component<Props, {}> {
     const { socialItem } = this.props
     return (
       <div className="social-link-item">
-        <a href={socialItem.socialUrl} target="_blank" className="link-item">
+        <a href={socialItem.socialUrl} target="_blank" className="link-item" title={socialItem.hoverTitle}>
           <i className={socialItem.socialIcon}/>
         </a>
       </div>
