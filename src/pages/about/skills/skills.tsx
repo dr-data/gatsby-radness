@@ -13,7 +13,6 @@ class Skills extends React.Component<any, any> {
     new TechSkillItem('CSS', this.filledStar, this.filledStar, this.filledStar, this.filledStar, this.filledStar),
     new TechSkillItem('SASS', this.filledStar, this.filledStar, this.filledStar, this.filledStar, this.emptyStar),
     new TechSkillItem('Bootstrap 4', this.filledStar, this.filledStar, this.filledStar, this.filledStar, this.emptyStar),
-    // new TechSkillItem('BEM', this.filledStar, this.halfStar, this.emptyStar, this.emptyStar, this.emptyStar),
     new TechSkillItem('Sketch', this.filledStar, this.filledStar, this.filledStar, this.emptyStar, this.emptyStar),
     new TechSkillItem('Photoshop', this.filledStar, this.filledStar, this.filledStar, this.emptyStar, this.emptyStar),
     new TechSkillItem('Illustrator', this.filledStar, this.filledStar, this.filledStar, this.emptyStar, this.emptyStar),
@@ -41,7 +40,6 @@ class Skills extends React.Component<any, any> {
             <TechSkill key={skill.skillTitle} techSkill={skill}/>
           ))}
         </div>
-
       </div>
     )
   }
