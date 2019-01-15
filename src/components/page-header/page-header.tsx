@@ -1,12 +1,13 @@
 import * as React from 'react'
 import './page-header.sass'
 
-const PageHeader = (props: any) => (
+const PageHeader = props => (
   <>
-    <header className="header-title">
-      <h3>{props.title}</h3>
-      </header>
-    <div className='header-bar'/>
+    <header className="header-container">
+      <h1 className="header-title">{props.title}
+        <span className="header-sub">{props.subTitle}</span>
+      </h1>
+    </header>
   </>
 
 )

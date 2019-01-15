@@ -4,9 +4,15 @@
   height: 50px
   width: 100%
   background: $darker-grey
-  border-bottom: 3px solid $primary
+  box-shadow: 0 2px 30px -1px #000
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+  transition: padding 1s, top 0.6s, box-shadow 1s 0.6s, border 1s 0.6s, background 1s 0.6s
   z-index: 99
   display: flex
+  top: 0
+  left: 0
+  right: 0
+  position: fixed
   align-items: center
   .container
     display: flex

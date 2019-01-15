@@ -5,6 +5,7 @@ import Layout from '../../components/layout'
 import ProjectHeader from '../../pages/projects/header/project-header'
 import { Link } from 'gatsby'
 
+
 class ProjectTemplate extends React.Component<any, any> {
 
   render() {

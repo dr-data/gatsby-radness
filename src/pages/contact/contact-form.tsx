@@ -44,8 +44,8 @@ class ContactForm extends React.Component<any, any> {
     const { selection } = this.state
     return (
       <>
-        <PageHeader title="Use the terminal to contact me"/>
-        <div className="container">
+        <div className="container section-container">
+          <PageHeader title="Let's" subTitle="Talk"/>
           <div className="terminal-container">
             <div className='terminal-bar'>
               <i className="fas fa-times-circle"/>
