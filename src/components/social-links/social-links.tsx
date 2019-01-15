@@ -14,7 +14,7 @@ class SocialLinks extends React.Component<> {
     return (
       <div className="social-link-wrapper">
         {this.socialLinks.map(link => (
-          <SocialLinkComponent socialItem={link}/>
+          <SocialLinkComponent key={link.socialUrl} socialItem={link}/>
         ))}
       </div>
     )

@@ -7,20 +7,24 @@ type Props = {
 }
 
 class TechSkill extends React.Component<Props, {}> {
+
+
   render() {
     const { techSkill } = this.props
-    return (
+    const starGroup = () => (
       <>
-        <div className="skill-item-container">
-          <div className='skill-item-wrapper'>
-            <div className='icon-wrapper'>
-              <i id={techSkill.iconClass} className={`skill-icon ${techSkill.icon}`}/>
-              <img className="skill-icon" src={techSkill.icon} alt=''/>
-            </div>
-            <div className="tech-title">{techSkill.text}</div>
-          </div>
-        </div>
+        <i className={`skill-icon ${techSkill.star1}`}/>
+        <i className={`skill-icon ${techSkill.star2}`}/>
+        <i className={`skill-icon ${techSkill.star3}`}/>
+        <i className={`skill-icon ${techSkill.star4}`}/>
+        <i className={`skill-icon ${techSkill.star5}`}/>
       </>
+    )
+    return (
+      <div className="skill-rating">
+        <span className="skill-title">{techSkill.skillTitle}</span>
+        {starGroup()}
+      </div>
     )
   }
 }

@@ -1,18 +1,24 @@
 @import "../../../sass/variables"
 
-.skill-item-container
-  .skill-item-wrapper
-    display: flex
-    align-items: center
-    margin: 1rem 0
-    .icon-wrapper
-      padding-right: 1rem
-      .skill-icon
-        font-size: 2rem
-        max-width: 30px
-        max-height: 30px
-        .tech-title
-          font-size: 1.1rem
+.skill-rating
+  font-size: 2rem
+  display: inline-flex
+  align-items: center
+  padding: .2rem
+  margin-bottom: .5rem
+  &:hover
+    background-color: #eeeeee
+    border-radius: 3px
+  &:hover .skill-icon
+    //letter-spacing: 4px
+  .skill-title
+    font-size: 1.2rem
+    width: 150px
+  .skill-icon
+    font-size: 1rem
+    letter-spacing: 3px
+    color: $primary
+    transition: .2s ease-in-out
 
 #angular
   color: $angular-brand

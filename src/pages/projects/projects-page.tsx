@@ -4,8 +4,8 @@ import PageHeader from '../../components/page-header/page-header'
 
 const ProjectPage = () => (
   <>
-    <PageHeader title="Projects"/>
-    <div className="container">
+    <div className="container section-container">
+      <PageHeader title="Project" subTitle="Portfolio"/>
       <ProjectCards/>
     </div>
   </>
