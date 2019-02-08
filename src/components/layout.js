@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { graphql, StaticQuery } from 'gatsby'
 import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
 import '../sass/styles.sass'
-import '../sass/_layouts.sass'
 import Navbar from '../components/navbar/navbar'
 import Footer from '../components/footer/footer'
 
